@@ -3,14 +3,10 @@ package com.budgetplanner.main;
 import com.budgetplanner.gui.PieChartPanel;
 import com.budgetplanner.model.Category;
 import com.budgetplanner.service.BudgetManager;
-
+import java.awt.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
 
-/**
- * Main application class for Portfolio Budget Planner
- */
 public class BudgetPlannerApp extends JFrame {
     private BudgetManager budgetManager;
     private PieChartPanel pieChartPanel;
@@ -28,7 +24,6 @@ public class BudgetPlannerApp extends JFrame {
         budgetManager = new BudgetManager();
         initializeGUI();
     }
-
     private void initializeGUI() {
         setTitle("Portfolio Budget Planner");
         setSize(1200, 700);
@@ -46,7 +41,7 @@ public class BudgetPlannerApp extends JFrame {
 
     private JPanel createTopPanel() {
         JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 15, 10));
-        topPanel.setBackground(new Color(52, 73, 94));
+        topPanel.setBackground(new Color(53, 73, 94));
         topPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         JLabel titleLabel = new JLabel("Portfolio Budget Planner");

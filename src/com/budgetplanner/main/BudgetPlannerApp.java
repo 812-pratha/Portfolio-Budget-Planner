@@ -56,16 +56,12 @@ public class BudgetPlannerApp extends JFrame {
         JPanel centerPanel = new JPanel(new BorderLayout(10, 10));
         centerPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        // Budget Setup Panel
         JPanel budgetSetupPanel = createBudgetSetupPanel();
-        
-        // Category Management Panel
+
         JPanel categoryPanel = createCategoryManagementPanel();
-        
-        // Table Panel
+
         JPanel tablePanel = createTablePanel();
 
-        // Add panels
         centerPanel.add(budgetSetupPanel, BorderLayout.NORTH);
         centerPanel.add(categoryPanel, BorderLayout.CENTER);
         centerPanel.add(tablePanel, BorderLayout.SOUTH);
